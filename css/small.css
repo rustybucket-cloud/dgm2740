@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 1em 2em;
+    background-color: #6185E0;
+    color: white;
+}
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+main ul {
+    list-style-type: none;
+}
+
+footer {
+    text-align: center;
+    background-color: #E07D5E;
+    color: white;
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 1em;
+}
