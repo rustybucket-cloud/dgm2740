@@ -23,8 +23,8 @@ nav ul { margin: 0; padding: 0; }
         width: 100%;
         font-size: 1.25rem;
     }
-    nav a:hover { background-color: #d6c6c3; }
     nav a.active { background-color: #F2E2DF; }
+    nav a:hover { background-color: #d6c6c3; }
 
 /* main styling */
 main { margin: 0; padding: 0 2%; }
