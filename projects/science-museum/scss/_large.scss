@@ -1,14 +1,20 @@
 /* create max width for header, nav, main and footer */
-header, nav, figure.heroImage, footer {
+header, nav, footer {
     max-width: 75rem;
     margin: auto;
 }
-
 nav {
     ul {
         justify-content: center;
         li { width: auto; }
     }
+}
+
+figure.heroImage {
+    max-width: 75rem;
+    margin: auto;
+    padding: 0; 
+    img { max-width: 75rem; }
 }
 
 main {
