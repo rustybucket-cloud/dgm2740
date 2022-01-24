@@ -1,0 +1,18 @@
+nav {
+    ul { 
+        flex-direction: row;
+        justify-content: space-between;
+        li { border-top: none; }
+        a { text-align: center; }
+    }
+}
+
+figure.heroImage { max-width: 75rem; margin: auto;}
+
+main {
+    figure { 
+        float: right;
+        width: 50%;
+        margin: 0 1rem;
+    }
+}

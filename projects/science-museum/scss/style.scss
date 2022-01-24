@@ -1,0 +1,10 @@
+/* imports */
+@import "normalize";
+@import "variables";
+@import "small";
+@media screen and (min-width: 800px) {
+    @import "medium";
+}
+@media screen and (min-width: 1024px) {
+    @import "large";
+}

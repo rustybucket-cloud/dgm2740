@@ -1,0 +1,19 @@
+/* create max width for header, nav, main and footer */
+header, nav, main, footer {
+    max-width: 75rem;
+    margin: auto;
+}
+
+nav {
+    ul {
+        justify-content: center;
+        li { width: auto; }
+    }
+}
+
+main {
+    margin: 1rem auto;
+    figure {
+        width: 25%;
+    }
+}
