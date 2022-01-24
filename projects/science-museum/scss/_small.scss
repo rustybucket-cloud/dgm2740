@@ -5,13 +5,14 @@ body {
 /* header styling */
 div.headerWrapper {
     background-color: $primaryColor;
+    padding: 1rem 2vw;
     box-shadow: 0px 5px 5px #888888;
 } 
 header {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    padding: 1rem 2vw;
+    /* padding: 1rem 2vw; */
     
     figure {
         margin: 0;
@@ -69,9 +70,8 @@ figure.heroImage {
 } 
 
 /* main styling */
+div.mainWrapper { padding: 1rem 2vw; }
 main { 
-    margin: 1rem 2vw; 
-    
     figure {
         width: 100%;
         padding: 0;

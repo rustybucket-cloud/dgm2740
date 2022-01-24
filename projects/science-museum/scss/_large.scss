@@ -1,5 +1,5 @@
 /* create max width for header, nav, main and footer */
-header, nav, main, footer {
+header, nav, figure.heroImage, footer {
     max-width: 75rem;
     margin: auto;
 }
@@ -12,6 +12,7 @@ nav {
 }
 
 main {
+    max-width: 75rem;
     margin: 1rem auto;
     figure {
         width: 25%;
