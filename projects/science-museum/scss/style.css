@@ -439,6 +439,7 @@ template {
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #00ce6b;
 }
 
 /* header styling */
@@ -536,6 +537,10 @@ figure.heroImage img {
 /* main styling */
 div.mainWrapper {
   padding: 1rem 2vw;
+}
+
+main {
+  background-color: white;
 }
 
 main figure {

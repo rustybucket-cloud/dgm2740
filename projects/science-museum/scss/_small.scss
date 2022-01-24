@@ -1,5 +1,6 @@
 body {
     font-family: $fontFamily;
+    background-color: $primaryColor;
 }
 
 /* header styling */
@@ -72,6 +73,7 @@ figure.heroImage {
 /* main styling */
 div.mainWrapper { padding: 1rem 2vw; }
 main { 
+    background-color: white;
     figure {
         width: 100%;
         padding: 0;
