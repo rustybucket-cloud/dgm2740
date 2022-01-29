@@ -1,0 +1,5 @@
+header, nav, main { max-width: 72rem; margin: auto; }
+
+.images {
+    figure { flex-basis: calc(25% - .2rem); }
+}

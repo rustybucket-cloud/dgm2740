@@ -1,0 +1,13 @@
+nav {
+    ul { 
+        flex-direction: row; 
+        justify-content: flex-end; 
+        li { width: auto; }
+    }
+}
+
+.images {
+    figure {
+        flex-basis: calc(33% - .1rem);
+    }
+}
