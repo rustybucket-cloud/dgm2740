@@ -3,6 +3,11 @@ nav {
         flex-direction: row; 
         justify-content: flex-end; 
         li { width: auto; }
+        i { 
+            font-style: normal;
+            margin-top: .5rem;
+            display: inline; 
+        }
     }
 }
 

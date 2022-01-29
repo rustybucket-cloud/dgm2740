@@ -498,6 +498,10 @@ nav ul a.active {
   background-color: #fff799;
 }
 
+nav ul i {
+  display: none;
+}
+
 main {
   padding: 0 2vw;
 }
@@ -546,6 +550,11 @@ footer {
   }
   nav ul li {
     width: auto;
+  }
+  nav ul i {
+    font-style: normal;
+    margin-top: .5rem;
+    display: inline;
   }
   .images figure {
     -ms-flex-preferred-size: calc(33% - .1rem);

@@ -34,6 +34,8 @@ nav {
         }
         a:hover { background-color: darken($primary-color, 10%); }
         a.active { background-color: lighten($primary-color, 30%);}
+
+        i { display: none; }
     }
 }
 
