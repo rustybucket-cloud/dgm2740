@@ -81,7 +81,7 @@ body {
 }
 
 .headerWrapper header p {
-  color: black;
+  color: #2c2c2c;
 }
 
 .headerWrapper:before {
@@ -170,6 +170,7 @@ main h1 {
 
 .card .cardBody {
   padding: .5rem 1rem;
+  color: #2c2c2c;
 }
 
 .card p {

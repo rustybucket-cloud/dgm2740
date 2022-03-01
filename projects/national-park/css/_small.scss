@@ -12,7 +12,7 @@ body {
             color: $primaryColor;
             font-weight: bold;
         }
-        p { color: black; }
+        p { color: $darkText; }
         height: 100px;
         padding: 1rem 2vw .25rem;
         display: flex;
@@ -89,7 +89,10 @@ main {
         background-color: $primaryColor;
         border-radius: $cardBorderRadius $cardBorderRadius  0 0;
     }
-    .cardBody { padding: .5rem 1rem; }
+    .cardBody { 
+        padding: .5rem 1rem; 
+        color: $darkText;
+    }
     p { margin-bottom: 3.5rem; }
     figure { width: 100%; }
     img { 
