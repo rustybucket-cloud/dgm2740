@@ -1,5 +1,6 @@
 body {
     font-family: "Lato", sans-serif;
+    overflow-x: hidden;
 }
 
 // ---- Header ----
@@ -74,12 +75,17 @@ main {
 .cards { 
     display: grid; 
     gap: 1rem;
+
+    .hidden { display: none; }
 }
 .card {
     background-color: $secondaryColor;
     border-radius: $cardBorderRadius;
     color: white;
     position: relative;
+    width: 100%;
+    transition: width 2s;
+
     
     h2 { 
         text-align: center; 
@@ -111,8 +117,25 @@ main {
             background-color: lighten($primaryColor, 10%);
         }
     }
-} // end card
 
+    &.expanded {
+        z-index: 999;
+        animation: grow 2s;
+        .learn-more { display: none; }
+        figure {
+            margin: auto;
+            max-width: 20rem; 
+        }
+        .hidden { display: block; }
+    }
+    .hidden {
+        display: none;
+    }
+} // end card
+@keyframes grow {
+    from {width: 33%;}
+    to { width: 100%; }
+}
 // ---- Footer ---- 
 footer {
     background-color: $primaryColor;
