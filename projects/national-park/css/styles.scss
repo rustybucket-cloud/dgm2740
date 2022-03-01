@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import "variables";
+@import "reset";
+@import "small";
+@media screen and(min-width: 35rem) {
+    @import "medium";
+}
+@media screen and (min-width: 60rem){
+    @import "large";
+}

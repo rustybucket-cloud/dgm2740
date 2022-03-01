@@ -1,0 +1,115 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+// ---- Header ----
+.headerWrapper {
+    position: relative;
+    header {
+        position: relative;
+        h1 { 
+            font-size: 2.5rem; 
+            color: $primaryColor;
+            font-weight: bold;
+        }
+        p { color: black; }
+        height: 100px;
+        padding: 1rem 2vw .25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    &:before { // background image that has opacity to make text readable
+        content: ' ';
+        background-image: url("../images/header/header-small.jpg");
+        background-size: cover;
+        background-position: center bottom;
+        position: absolute;
+        inset: 0 0 0 0;
+        opacity: .5;
+    }
+    &:after { // label for image size
+        content: 'sm';
+        position: absolute;
+        right:0;
+        top: 0;
+    }
+} // end header
+
+// ---- Nav ----
+.navWrapper {
+    background-color: $secondaryColor;
+    button { 
+        font-size: 2rem;
+        padding: .5rem 1rem; 
+        background: none;
+        border: none;
+        color: white;
+    }
+    nav {
+        padding-left: .25rem;
+        padding-right: 2vw;
+        .hidden { display: none; }
+        a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            padding: .75rem;
+
+            &:hover {
+                background-color: lighten($secondaryColor, 10%);
+            }
+
+            &.active { background-color: darken($secondaryColor, 10%); }
+        }
+    } 
+} // end nav
+
+// ---- Main ----
+main {
+    padding: .5rem 2vw;
+    h1 { font-size: 3rem; }
+}
+.cards { 
+    display: grid; 
+    gap: 1rem;
+}
+.card {
+    background-color: $secondaryColor;
+    border-radius: $cardBorderRadius;
+    color: white;
+    position: relative;
+    
+    h2 { 
+        text-align: center; 
+        font-size: 2rem;
+        border-bottom: 1px solid white;
+        padding: .5rem;
+        background-color: $primaryColor;
+        border-radius: $cardBorderRadius $cardBorderRadius  0 0;
+    }
+    .cardBody { padding: .5rem 1rem; }
+    p { margin-bottom: 3.5rem; }
+    figure { width: 100%; }
+    img { 
+        width: 100%; 
+        height: auto;
+    }
+    button {
+        padding: .75rem;
+        border-radius: 10px;
+        background-color: $primaryColor;
+        color: white;
+        position: absolute;
+        inset: auto .5rem .5rem .5rem;
+    }
+} // end card
+
+// ---- Footer ---- 
+footer {
+    background-color: $primaryColor;
+    color: white;
+    padding: .5rem;
+    text-align: center;
+}

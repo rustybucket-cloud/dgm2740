@@ -1,0 +1,21 @@
+header, nav, main { 
+    max-width: 60rem; 
+    margin: auto;
+}
+
+.headerWrapper {
+   &:after { content: "lg" } 
+}
+
+.navWrapper {
+    nav { 
+        button { display: none; }
+        ul, .hidden {
+            display: flex;
+            justify-content: flex-end; 
+            align-items: center;
+        }
+    }
+}
+
+.cards { grid-template-columns: repeat(3, 1fr); }

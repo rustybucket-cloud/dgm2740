@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.headerWrapper {
+  position: relative;
+}
+
+.headerWrapper header {
+  position: relative;
+  height: 100px;
+  padding: 1rem 2vw .25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.headerWrapper header h1 {
+  font-size: 2.5rem;
+  color: #c45002;
+  font-weight: bold;
+}
+
+.headerWrapper header p {
+  color: black;
+}
+
+.headerWrapper:before {
+  content: ' ';
+  background-image: url("../images/header/header-small.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  position: absolute;
+  inset: 0 0 0 0;
+  opacity: .5;
+}
+
+.headerWrapper:after {
+  content: 'sm';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.navWrapper {
+  background-color: #3EA1AB;
+}
+
+.navWrapper button {
+  font-size: 2rem;
+  padding: .5rem 1rem;
+  background: none;
+  border: none;
+  color: white;
+}
+
+.navWrapper nav {
+  padding-left: .25rem;
+  padding-right: 2vw;
+}
+
+.navWrapper nav .hidden {
+  display: none;
+}
+
+.navWrapper nav a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: .75rem;
+}
+
+.navWrapper nav a:hover {
+  background-color: #59b9c3;
+}
+
+.navWrapper nav a.active {
+  background-color: #307e86;
+}
+
+main {
+  padding: .5rem 2vw;
+}
+
+main h1 {
+  font-size: 3rem;
+}
+
+.cards {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background-color: #3EA1AB;
+  border-radius: 10px;
+  color: white;
+  position: relative;
+}
+
+.card h2 {
+  text-align: center;
+  font-size: 2rem;
+  border-bottom: 1px solid white;
+  padding: .5rem;
+  background-color: #c45002;
+  border-radius: 10px 10px 0 0;
+}
+
+.card .cardBody {
+  padding: .5rem 1rem;
+}
+
+.card p {
+  margin-bottom: 3.5rem;
+}
+
+.card figure {
+  width: 100%;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card button {
+  padding: .75rem;
+  border-radius: 10px;
+  background-color: #c45002;
+  color: white;
+  position: absolute;
+  inset: auto .5rem .5rem .5rem;
+}
+
+footer {
+  background-color: #c45002;
+  color: white;
+  padding: .5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 35rem) {
+  .headerWrapper:after {
+    content: 'md';
+  }
+  .cards {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  header, nav, main {
+    max-width: 60rem;
+    margin: auto;
+  }
+  .headerWrapper:after {
+    content: "lg";
+  }
+  .navWrapper nav button {
+    display: none;
+  }
+  .navWrapper nav ul, .navWrapper nav .hidden {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cards {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+/*# sourceMappingURL=styles.css.map */

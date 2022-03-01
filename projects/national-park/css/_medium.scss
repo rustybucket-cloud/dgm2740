@@ -1,0 +1,5 @@
+.headerWrapper {
+    &:after { content: 'md'; }
+}
+
+.cards { grid-template-columns: 1fr 1fr; }
