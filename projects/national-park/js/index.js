@@ -4,6 +4,8 @@ document.querySelector('#menuButton').addEventListener("click", () => document.q
 // expand cards
 document.querySelectorAll('.learn-more').forEach((button) => {
     button.addEventListener("click", ({currentTarget}) => {
+        window.scroll(0,20)
+
         let cardToExpand
         switch (currentTarget.id) {
             case "learn-more-bighorn":
