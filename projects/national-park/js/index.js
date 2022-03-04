@@ -26,6 +26,7 @@ document.querySelectorAll('.learn-more').forEach((button) => {
     })
 })
 
+// unexpand card
 document.querySelectorAll(".hide").forEach(button => {
     button.addEventListener("click", () => {
         document.querySelector('.cards').style.display = "grid"

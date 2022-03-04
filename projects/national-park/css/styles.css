@@ -185,15 +185,6 @@ main h1 {
   margin-bottom: 3.5rem;
 }
 
-.card figure {
-  width: 100%;
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-}
-
 .card button {
   padding: .75rem;
   border-radius: 10px;
@@ -205,6 +196,21 @@ main h1 {
 
 .card button:hover {
   background-color: #f66503;
+}
+
+.card figure {
+  width: 100%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
 }
 
 .card.expanded {
@@ -228,6 +234,39 @@ main h1 {
 
 .card .hidden {
   display: none;
+}
+
+button:hover ~ figure {
+  /* animation: scaleImage 1s ease-in-out;
+    animation-fill-mode: forwards; */
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+@-webkit-keyframes scaleImage {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes scaleImage {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
 }
 
 @-webkit-keyframes grow {
