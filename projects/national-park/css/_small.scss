@@ -139,7 +139,7 @@ main {
         display: none;
     }
 } // end card
-button:hover ~ figure {
+.card:hover figure {
     /* animation: scaleImage 1s ease-in-out;
     animation-fill-mode: forwards; */
     transform: scale(1.2);
