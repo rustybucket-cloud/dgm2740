@@ -1,0 +1,78 @@
+* { font-family: $font-family; }
+
+/*  header styling */
+header {
+    background-color: $primary-color;
+    padding: .5rem 2vw;
+    h1 { font-family: $title-font; }
+    figure { 
+        float: left;
+        margin-right: .5rem;
+    }
+    
+} /* end header  */
+.clearfix::after {
+        content: "";
+        clear: both; 
+        display:table;
+    }
+/* nav styling */
+nav {
+    background-color: $secondary-color;
+    button {
+       background: none; 
+       border: none;
+       margin: .5rem 2vw;
+       font-size: 1.5rem;
+       .close-button { display: none; }
+    }
+    &.open {
+        button {
+            .close-button { display: inline; }
+            .open-button { display: none; }
+        }
+    }
+    ul { 
+        list-style-type: none; 
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+    a { 
+        display: block; 
+        padding: .5rem 2vw;
+        text-decoration: none;
+        color: black;
+
+        &:hover { background-color: lighten($secondary-color, 10%); }
+        &.active { background-color: darken($secondary-color, 10%) }
+    }
+    &.open {
+        ul { display: block; }
+    }
+}
+
+/*  main styling */
+main {
+    figure {
+    width: 100%;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    } 
+    article { padding: 0 2vw; }
+    .articleContent { 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: .5rem;
+    }
+}
+
+footer {
+    background-color: $primary-color;
+    text-align: center;
+    padding: 1rem;
+    margin-top: .5rem;
+}

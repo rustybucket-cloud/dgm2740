@@ -5,20 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taco Station</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
-    <header>
+    <header class="clearfix">
         <figure>
-            <img src="images/taco-logo.png" alt="Logo">
+            <img srcset="images/logo/sm.png 1x, images/logo/md.png 2x, images/logo/lg.pn 3x"
+            src="images/logo/logo.png" alt="Logo">
         </figure>
         <h1>Taco Station</h1>
         <p>Ay Caramba</p>
     </header>
 
-    <nav></nav>
+    <nav>
+        <button id="menuButton"><span class="open-button">&#9776;</span><span class="close-button">X</span></button>
+        <ul>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#" class="active">Our Founder</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
 
-    <main></main>
+    <main>
+        <figure class="hero">
+            <picture>
+                <source media="(min-width:1050px)" srcset="images/hero/6.jpg">
+                <source media="(min-width:900px)" srcset="images/hero/5.jpg">
+                <source media="(min-width:750px)" srcset="images/hero/4.jpg">
+                <source media="(min-width:600px)" srcset="images/hero/3.jpg">
+                <source media="(min-width:450px)" srcset="images/hero/2.jpg">
+                <img src="images/hero/1.jpg" alt="A plate of tacos" width="450" height="252">
+            </picture>
+        </figure>
+        <article class="clearfix">
+            <h2>Our Founder</h2>
+            <div class="articleContent">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget nullam non nisi est sit amet facilisis magna. Eu turpis egestas pretium aenean pharetra. Enim ut tellus elementum sagittis vitae et leo duis. Nec dui nunc mattis enim ut tellus. In dictum non consectetur a erat nam. Lobortis elementum nibh tellus molestie nunc non blandit massa. Viverra vitae congue eu consequat ac felis donec et odio. Sed risus pretium quam vulputate dignissim suspendisse in. Id consectetur purus ut faucibus pulvinar elementum integer. Vivamus at augue eget arcu dictum varius duis at consectetur. Felis eget nunc lobortis mattis. Morbi enim nunc faucibus a pellentesque. Et magnis dis parturient montes nascetur ridiculus mus.</p>
+                <aside class="founder-image">
+                    <figure>
+                        <picture>
+                            <source media="(min-width:900px)" srcset="images/founder/lg.jpg">
+                            <source media="(min-width:601px)" srcset="images/founder/md.jpg">
+                            <source media="(max-width:600px)" srcset="images/founder/sm.jpg">
+                            <img src="images/founder/lg.jpg" alt="A photo of out founder">
+                        </picture>
+                    </figure>
+                </aside>
+            </div>
+        </article>
+    </main>
 
-    <footer></footer>
+    <footer>
+        <p>Jacob Patton &copy; 2022</p>
+    </footer>
 </body>
 </html>
