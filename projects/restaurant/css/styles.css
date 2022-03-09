@@ -81,6 +81,20 @@ select {
   font-family: "Open Sans", sans-serif;
 }
 
+#skipToContent {
+  position: absolute;
+  left: 50%;
+  background-color: #54a1e1;
+  padding: .5rem;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+#skipToContent:focus {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
 /*  header styling */
 header {
   background-color: #36a4ff;

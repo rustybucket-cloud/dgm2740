@@ -1,5 +1,15 @@
 * { font-family: $font-family; }
 
+#skipToContent {
+    position:absolute;
+    left: 50%;
+    background-color: $secondary-color;
+    padding: .5rem;
+    transform: translateY(-100%);
+
+    &:focus { transform: translateY(0%); }
+}
+
 /*  header styling */
 header {
     background-color: $primary-color;
