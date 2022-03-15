@@ -2,3 +2,6 @@ main, header, nav, footer {
     max-width: 75rem;
     margin: auto;
 }
+main {
+    article { margin: 0; }
+}

@@ -178,7 +178,7 @@ main figure img {
 }
 
 main article {
-  padding: 0 2vw;
+  margin: 0 2vw;
 }
 
 main .articleContent {
@@ -187,6 +187,9 @@ main .articleContent {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   gap: .5rem;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
 }
 
 footer {
@@ -196,10 +199,24 @@ footer {
   margin-top: .5rem;
 }
 
+@media screen and (min-width: 52.5rem) {
+  nav button {
+    display: none;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 @media screen and (min-width: 75rem) {
   main, header, nav, footer {
     max-width: 75rem;
     margin: auto;
+  }
+  main article {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */

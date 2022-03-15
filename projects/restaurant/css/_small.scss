@@ -71,12 +71,13 @@ main {
             width: 100%;
             height: auto;
         }
-    } 
-    article { padding: 0 2vw; }
+    }
+    article { margin: 0 2vw; }
     .articleContent { 
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: .5rem;
+        justify-content: stretch;
     }
 }
 
