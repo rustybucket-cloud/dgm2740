@@ -58,7 +58,9 @@ nav {
         &.active { background-color: darken($secondary-color, 10%) }
     }
     &.open {
-        ul { display: block; }
+        ul { 
+            display: block; 
+        }
     }
 }
 

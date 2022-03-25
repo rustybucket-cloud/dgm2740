@@ -73,6 +73,10 @@ nav {
         &.open {
             display: block;
             margin-top: .5rem;
+            top: 5rem;
+        }
+        @media screen and (max-width: 355px) {
+            &.open { top: 8rem; }
         }
     }
     li { width: 100%; }
