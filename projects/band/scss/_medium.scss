@@ -1,0 +1,11 @@
+#members {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+nav {
+    ul { 
+        max-width: 250px;
+        left: auto;
+        right: 0;
+    }
+}

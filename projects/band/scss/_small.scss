@@ -1,0 +1,114 @@
+body {
+    font-family: $body-font;
+}
+
+header {
+    background-color: $primary-color;
+    padding: .5rem 2vw;
+    
+    &::after { // clearfix
+        content: "";
+        clear: both; 
+        display:table;
+    } 
+    
+    img { 
+        width: 3rem; 
+        float: left;
+        margin-right: .5rem;
+    }
+    h1 { font-family: $title-font; }
+} // end header
+
+nav {
+    margin-left: auto;
+    display: flex;
+    height: 100%;
+    align-items: stretch;
+    button {
+        background: none;
+        border: none;
+        font-size: 2rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    button.hidden { display: none; }
+    ul { 
+        position: absolute;
+        background-color: $primary-color;
+        height: 30rem;
+        z-index: 999;
+        display: none; 
+        max-height: 14.5rem;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        list-style-type: none;
+
+        span { display: none; }
+
+        &.open {
+            display: block;
+            margin-top: .5rem;
+        }
+    }
+    li { width: 100%; }
+    a { 
+        display: block;
+        text-decoration: none; 
+        color: black;
+        height: 100%;
+        width: 100%;
+        padding: 1rem;
+
+        &:hover { background-color: lighten($primary-color, 10%); }
+        &.active { background-color: darken($primary-color, 10%); }
+    }
+}
+
+main {
+    padding: 0 2vw;
+} // end main
+.member {
+    figure { 
+        width: 50%; 
+        float: right;
+        max-height: 100%;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+.drummer {
+    figure {  shape-outside: circle(50%); }
+    img { clip-path: circle(30% at 50% 50%); }
+}
+.singer {
+    figure {
+        shape-outside: polygon(15% 100%, 50% 0%, 85% 100%); 
+        margin: .5rem;
+        }
+    img { clip-path: polygon(15% 100%, 50% 0%, 85% 100%); }
+}
+.guitar {
+    figure {
+        shape-outside: polygon(25% 0, 100% 0%, 100% 100%); 
+        margin: .5rem;
+        }
+    img { clip-path: polygon(25% 0, 100% 0%, 100% 100%); }
+}
+.bg-singer {
+    figure {
+        shape-outside: circle(25%); 
+        width: 50%;
+        margin: .5rem;
+        }
+    img { clip-path: circle(75% at 100% 0%); }
+}
+
+footer {
+    text-align: center;
+}

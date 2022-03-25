@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Spicy Jalepenos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <a href="#members"></a>
+    <header>
+        <img src="images/spice-jalepenos-logo.svg" alt="Our Logo">
+        <h1>The Spicy Jalepenos</h1>
+
+        <nav>
+            <button id="open-button" aria-label="open menu">&#9776;</button>
+            <button id="close-button" aria-label="close menu" class="hidden">x</button>
+            <ul>
+                <li><a href="#" class="active">Members</a></li>
+                <span>|</span>
+                <li><a href="#">Concerts</a></li>
+                <span>|</span>
+                <li><a href="#">Book Us
+                </a></li>
+                <span>|</span>
+                <li><a href="#">Backstory</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Members</h1>
+        <article id="members" aria-label="member info">
+            <section class="member drummer">
+                <h2>Dan Drummerman</h2>
+                <figure>
+                    <img
+                        srcset="images/drummer/150.jpg 150w
+                                images/drummer/300.jpg 300w
+                                images/drummer/400.jpg 400w"
+                        sizes=" (max-width:896px) 300px,
+                                (max-width:1200px) 400px,
+                                150px"
+                        src="images/drummer/400.jpg"
+                        alt="A drummer"
+                    >
+                </figure>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta ullam delectus quod praesentium veritatis expedita iusto, sequi eum repellendus rerum consequuntur voluptas rem animi non consequatur ducimus est ad cum?</p>
+            </section>
+            <section class="member singer">
+                <h2>Sam Singer</h2>
+                <figure>
+                    <img
+                        srcset="images/singer/150.jpg 150w
+                                images/singer/300.jpg 300w
+                                images/singer/400.jpg 400w"
+                        sizes=" (max-width:896px) 300px,
+                                (max-width:1200px) 400px,
+                                150px"
+                        src="images/singer/400.jpg"
+                        alt="A drummer"
+                    >
+                </figure>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta ullam delectus quod praesentium veritatis expedita iusto, sequi eum repellendus rerum consequuntur voluptas rem animi non consequatur ducimus est ad cum?</p>
+            </section>
+            <section class="member guitar">
+                <h2>Grant Guitar</h2>
+                <figure>
+                    <img
+                        srcset="images/guitar/150.jpg 150w
+                                images/guitar/300.jpg 300w
+                                images/guitar/400.jpg 400w"
+                        sizes=" (max-width:896px) 300px,
+                                (max-width:1200px) 400px,
+                                150px"
+                        src="images/guitar/400.jpg"
+                        alt="A drummer"
+                    >
+                </figure>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta ullam delectus quod praesentium veritatis expedita iusto, sequi eum repellendus rerum consequuntur voluptas rem animi non consequatur ducimus est ad cum?</p>
+            </section>
+            <section class="member bg-singer">
+                <h2>Bill Backup</h2>
+                <figure>
+                    <img
+                        srcset="images/bg-singer/150.jpg 150w
+                                images/bg-singer/300.jpg 300w
+                                images/bg-singer/400.jpg 400w"
+                        sizes=" (max-width:896px) 300px,
+                                (max-width:1200px) 400px,
+                                150px"
+                        src="images/bg-singer/400.jpg"
+                        alt="A drummer"
+                    >
+                </figure>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta ullam delectus quod praesentium veritatis expedita iusto, sequi eum repellendus rerum consequuntur voluptas rem animi non consequatur ducimus est ad cum?</p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>Jacob Patton &copy;2022</p>
+    </footer>
+</body>
+</html>
