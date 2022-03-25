@@ -62,8 +62,12 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important; } }
 
+:root {
+  background-color: #71D98D; }
+
 body {
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+  background-color: white; }
 
 header {
   background-color: #71D98D;
@@ -125,7 +129,8 @@ nav {
       background-color: #49ce6d; }
 
 main {
-  padding: 0 2vw; }
+  padding: 0 2vw;
+  background-color: white; }
 
 .member figure {
   width: 50%;
