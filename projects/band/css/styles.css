@@ -62,16 +62,28 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important; } }
 
-:root {
-  background-color: #71D98D; }
-
 body {
   font-family: "Lato", sans-serif;
-  background-color: white; }
+  background-color: white;
+  position: relative;
+  padding-bottom: 3.5rem; }
+
+.skip-to-content {
+  position: absolute;
+  left: 25%;
+  background-color: #49ce6d;
+  padding: 1rem;
+  border-radius: 5px;
+  transform: translateX(-1000%);
+  transition: transform .5s; }
+  .skip-to-content:focus {
+    transform: translateX(0);
+    transition: transform .5s; }
 
 header {
   background-color: #71D98D;
-  padding: .5rem 2vw; }
+  padding: .5rem 2vw;
+  display: flex; }
   header::after {
     content: "";
     clear: both;
@@ -82,6 +94,8 @@ header {
     margin-right: .5rem; }
   header h1 {
     font-family: "Metal Mania"; }
+  header div {
+    width: 70%; }
 
 nav {
   margin-left: auto;
@@ -132,14 +146,20 @@ main {
   padding: 0 2vw;
   background-color: white; }
 
-.member figure {
-  width: 50%;
-  float: right;
-  max-height: 100%; }
+#members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem; }
 
-.member img {
-  width: 100%;
-  height: auto; }
+.member {
+  flex-basis: 100%; }
+  .member figure {
+    width: 66%;
+    float: right;
+    max-height: 100%; }
+  .member img {
+    width: 100%;
+    height: auto; }
 
 .drummer figure {
   shape-outside: circle(50%); }
@@ -169,17 +189,27 @@ main {
 .bg-singer img {
   clip-path: circle(75% at 100% 0%); }
 
+.images {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem; }
+
 footer {
-  text-align: center; }
+  text-align: center;
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: .5rem;
+  background-color: #71D98D; }
 
 @media screen and (min-width: 480px) {
-  #members {
-    display: grid;
-    grid-template-columns: 1fr 1fr; }
+  .member {
+    flex-basis: calc(50% - .5rem); }
   nav ul {
     max-width: 250px;
     left: auto;
-    right: 0; } }
+    right: 0; }
+  .member figure {
+    width: 75%; } }
 
 @media screen and (min-width: 840px) {
   header, main, footer {
@@ -204,12 +234,12 @@ footer {
       display: inline; }
   nav button {
     display: none; }
-  #members {
-    grid-template-columns: repeat(4, 1fr); }
-  .member figure {
-    width: 75%;
-    float: right;
-    max-height: 100%; }
-  .member img {
-    width: 100%;
-    height: auto; } }
+  .member {
+    flex-basis: calc(25% - .5rem); }
+    .member figure {
+      width: 85%;
+      float: right;
+      max-height: 100%; }
+    .member img {
+      width: 100%;
+      height: auto; } }

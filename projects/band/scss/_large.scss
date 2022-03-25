@@ -26,12 +26,10 @@ nav {
     button { display: none; }
 }
 
-#members {
-    grid-template-columns: repeat(4, 1fr);
-}
 .member {
+    flex-basis: calc(25% - .5rem); 
     figure { 
-        width: 75%; 
+        width: 85%; 
         float: right;
         max-height: 100%;
     }

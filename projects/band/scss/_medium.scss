@@ -1,11 +1,13 @@
-#members {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+.member { flex-basis: calc(50% - .5rem); }
 nav {
     ul { 
         max-width: 250px;
         left: auto;
         right: 0;
+    }
+}
+.member {
+    figure {
+        width: 75%;;
     }
 }
