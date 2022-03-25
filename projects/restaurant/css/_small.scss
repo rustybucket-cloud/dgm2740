@@ -22,10 +22,10 @@ header {
     
 } /* end header  */
 .clearfix::after {
-        content: "";
-        clear: both; 
-        display:table;
-    }
+    content: "";
+    clear: both; 
+    display:table;
+}
 /* nav styling */
 nav {
     background-color: $secondary-color;

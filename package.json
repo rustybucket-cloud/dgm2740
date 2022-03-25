@@ -1,0 +1,23 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch projects/*/scss -o projects/*/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rustybucket-cloud/dgm2740.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rustybucket-cloud/dgm2740/issues"
+  },
+  "homepage": "https://github.com/rustybucket-cloud/dgm2740#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
